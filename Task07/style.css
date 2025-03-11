@@ -6,11 +6,17 @@
     margin: 0;
 }
 
+body {
+    display: flex;
+    justify-content: center;
+}
+
 html{
     font-family: "Poppins", sans-serif;
 }
 
 .container{
+    width: 1512px;
     display: flex;
     flex-direction: column;
     gap: 90px;
@@ -18,6 +24,7 @@ html{
 }
 
 .batdau a{
+    
     background-color: #96C67F;
     padding: 20px 16px;
     border-radius: 6px;
@@ -51,6 +58,7 @@ h1{
     gap: 50px;
     list-style: none;
     padding: 10px;
+    position: relative;
 }
 
 .nav ul li a{
@@ -60,12 +68,30 @@ h1{
     font-weight: 400;
 }
 
-.nav ul li a:hover {
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-}
+li {
+    color: rgba(31, 29, 42, 1);
+    font-size: 16px;
+    list-style-type: none;
+    position: relative;
+    padding: 12px;
+  }
+  li::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 100px;
+  }
+  li:hover::after {
+    width: 100%;
+    transition: ease-in-out 0.5s;
+  }
 
 .sign {
+    display: flex;
     background-color: #e8e1da;
     border: 1px solid #1F1D2A;
     padding: 10px;
@@ -86,6 +112,7 @@ h1{
 
 
 .banner {
+    
     display: flex;
     justify-content: space-between;
     background-color: #e8e1da;
@@ -101,13 +128,17 @@ h1{
     gap: 30px;
 }
 
+.left span{
+    color: #9B948E;
+}
+
 .box{
     position: relative;
 }
 .anh{
     border-radius: 50%;
-    width: 350px;
-    height: 350px;
+    width: 500px;
+    height: 500px;
     
 }
 
@@ -177,22 +208,30 @@ h1{
     border-radius: 20px;
 }
 
-.element{
-    position: relative; 
-  display: inline-block;
-  font-weight: bold;
-  color: #121221; 
-}
-
-.element::after{
- 
-    content: "_";
+.career {
+    text-align: center;
+    margin: 100px 616px 74px 616px;
+  }
+  .career p {
+    font-size: 18px;
+  }
+  .career h2 {
+    font-size: 32px;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+  }
+  
+  .career h2 span::after {
+    content: "";
     position: absolute;
-    right: 0;
-    height: 20px;
-    
-    transform: translate();
-}
+    left: 61%;
+    bottom: 4px;
+    width: 40%;
+    height: 7px;
+    background-color: #96c67f;
+    z-index: -1;
+  }
 
 .noidung{
     padding: 20px;

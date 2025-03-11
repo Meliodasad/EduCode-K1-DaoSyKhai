@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    color: #FFF;
+    font-family: BeaufortforLOL-Bold;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.container{
+    height: 3516px;
+    width: 1440px;
+    display: flex;   
+    flex-direction: column;
+
+}
+
+.banner img{
+    width: 100%;
+}
+
+.lol img{
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.nav ul{
+    display: flex;
+    list-style: none;
+    gap: 32px;
+    justify-content: center;
+
+}
+
+.nav ul li a{
+    color: #000;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    padding: 63px 0px;
+}
+
+.anh img{
+    width: 325px;
+    height: 370px;
+}
+
+.anh{
+    display: flex;
+    align-items: center;
+     flex-direction: column;
+     background-color: #0E4C67;
+}
+
+.anh a{
+    text-decoration: none;
+    padding: 28px 100px;
+    color: #fff;
+}
+
+.video{
+    margin-bottom: 73px;
+}
+
+footer{
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+    background-color: #0E4C67;
+}
+
+input{
+    padding: 15px;
+    border: 2px solid #FFA800;
+    margin-right: 15px;
+}
+
+button{
+    color: #FFF;
+    padding: 15px;
+    border-radius: 5px;
+    background: #FFA800;
+}
+
